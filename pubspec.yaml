@@ -21,6 +21,9 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  outline_gradient_button: ^1.0.0+2
+
+
   flutter:
     sdk: flutter
 
@@ -46,13 +49,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/login/background.jpg
-    - images/login/eye.png
-    - images/login/hide.png
-    - images/login/login-btn.png
-    - images/login/logo.png
-    - images/login/password.png
-    - images/login/username.png
+    - images/
+    - images/login/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
