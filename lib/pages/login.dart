@@ -1,3 +1,4 @@
+import 'package:coke_learning_app/pages/dashboard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:outline_gradient_button/outline_gradient_button.dart';
@@ -31,7 +32,7 @@ bool _checkBoxVal=true;
             ),
           ),
           Positioned(
-            top: 100,
+            top: 150,
             right: 20,
             child: Center(
               child: Stack(children: <Widget>[
@@ -70,6 +71,8 @@ bool _checkBoxVal=true;
                                     decoration: new InputDecoration(
                                       prefixIcon: Icon(Icons.mail),
                                       labelText: "Employee ID",
+                                      focusColor: Colors.white,
+                                      hoverColor: Colors.white,
 
                                     ),
                                     keyboardType: TextInputType.emailAddress,
@@ -110,8 +113,12 @@ bool _checkBoxVal=true;
                                   SizedBox(height: 20,),
                                   OutlineGradientButton(
                                     padding: const EdgeInsets.fromLTRB(30,15,30,15),
-
                                     backgroundColor: Colors.white,
+                                    onTap: (){
+
+                                      Navigator.pushReplacement(
+                                          context, MaterialPageRoute(builder: (context) => Dashboard()));
+                                    },
                                     child: Text('LOGIN',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.red),),
                                     gradient: LinearGradient(colors: [Colors.red, Colors.red[900]]),
                                     strokeWidth: 8,
