@@ -47,7 +47,7 @@ bool _checkBoxVal=true;
 
 
           Padding(
-            padding: const EdgeInsets.fromLTRB(0,250,0,0),
+            padding: const EdgeInsets.fromLTRB(0,280,0,0),
             child: Container(
               width: double.infinity,
               child: Center(
@@ -106,7 +106,7 @@ bool _checkBoxVal=true;
                                         ],
                                       ),
 
-                                      new Text('Forget Password',style:TextStyle(color:Colors.white,fontSize: 12)),
+                                      new Text('Forgot Password',style:TextStyle(color:Colors.white,fontSize: 12)),
 
                                     ],
                                   ),
