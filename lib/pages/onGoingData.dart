@@ -21,10 +21,25 @@ class OnGoing extends StatelessWidget {
 
                     Center(child: Image.asset("images/login/bar.png",height: 80,)),
                     Padding(
+                      padding: EdgeInsets.fromLTRB(90,15,15,15),
+                      child: Text('2020 Code of Conduct.PDF',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w100),),
+                    ),
+                    Padding(
                       padding: EdgeInsets.fromLTRB(300,30,15,15),
                       child: Text('80%',style: TextStyle(color: Colors.red[900]),),
                     ),
-//                                padding: EdgeInsets.fromLTRB(75,15,15,15),
+
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(90,50,0,0),
+                      child: Row(
+                        children: <Widget>[
+                          Text("hello"),
+                          Text("hello"),
+                          Text("hello"),
+                        ],
+                      ),
+                    ),
+
                     Center(
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(0,20,0,0),
